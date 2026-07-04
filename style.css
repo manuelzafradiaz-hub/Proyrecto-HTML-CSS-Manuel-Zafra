@@ -1,0 +1,345 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #eaeaea;
+    line-height: 1.7;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #00d4ff;
+}
+
+.encabezado h1 {
+    font-size: 2.6rem;
+    color: #00d4ff;
+    margin-bottom: 0.5rem;
+}
+
+.encabezado p {
+    color: #b5eaff;
+}
+
+.infoProf small {
+    color: #aaa;
+}
+
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+}
+
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #00d4ff;
+    margin-bottom: 1rem;
+    border-left: none;
+    padding-left: 0;
+    
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #7dd3fc;
+}
+
+h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+
+.sobremi figure {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sobremi img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border: 4px solid #eff0f0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.sobremi figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #9adfff;
+}
+
+.sobremi p {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+
+.skills,
+.soft {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+dl dt {
+    margin-top: 1rem;
+    color: #00d4ff;
+}
+
+dl dd {
+    margin-left: 1rem;
+    color: #ccc;
+}
+.skills h3 {
+    font-size: 2.2rem;
+    color: #00d4ff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.skills h4 {
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    padding-left: 0.8rem;
+}
+
+
+.Formación ul {
+    list-style: none;
+}
+
+.Formación li {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #00d4ff;
+    
+}
+.Formación h2{
+    text-align: center;
+}
+
+.Formación h3 {
+    color: #ffffff;
+}
+
+
+.proyectos .u-box {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.proyectos h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+.proyectos img {
+    border-radius: 10px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+.proyectos figure {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.proyectos img:hover {
+    transform: scale(1.05);
+}
+.proyectos .meta {
+    text-align: center;
+}
+
+.segunda-img {
+    transition: transform 0.3s ease;
+}
+
+.segunda-img:hover {
+    transform: scale(1.05);
+}
+.meta p {
+    color: #ffffff;
+}
+
+.meta a {
+    color: #3686cc;
+    text-decoration: none;
+}
+
+.meta a:hover {
+    text-decoration: underline;
+}
+
+
+.contacto form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contacto label {
+    color: #7dd3fc;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1e293b;
+    color: #eaeaea;
+}
+
+.contacto input[type="submit"],
+.contacto input[type="reset"] {
+    width: 48%;
+    margin-top: 1rem;
+    background: #00d4ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contacto input[type="submit"]:hover,
+.contacto input[type="reset"]:hover {
+    background: #38bdf8;
+}
+
+
+footer {
+    background: #020617;
+    padding: 2rem;
+    text-align: center;
+    border-top: 2px solid #00d4ff;
+}
+
+footer a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p,
+footer small {
+    color: #aaa;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+p.linkProf {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+p.linkProf > a {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 1rem 3.2rem;
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: 
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+p.linkProf > a:hover {
+    background: #111111;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem;
+    }
+
+    .encabezado h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}

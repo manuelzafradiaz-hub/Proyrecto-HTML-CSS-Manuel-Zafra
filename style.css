@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root {
-  --bg-color: #f7f7f7;
-  --accent-color: #e69912;
-  --base-color: #000000;
-  --spacing: 20px;
-  --border-radius: 14px;
-  --shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
  *{
     margin: 0;
     padding: 0;
@@ -26,7 +17,7 @@ header {
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
     background: linear-gradient(180deg, #1e2835 0%, #1a3a50 100%);  
     color: #eaeaea;
     line-height: 1.7;
@@ -39,7 +30,7 @@ body {
 }
 
 .encabezado p {
-    color: #b5eaff;
+    color: #00b7ff;
 }
 
 .infoProf small {
@@ -96,7 +87,7 @@ section {
 
 h2 {
     font-size: 2.2rem;
-    color: #d2d4cd;
+    color: #fcffe9;
     margin-bottom: 1rem;
     border-left:none;
     padding-left: 0;
@@ -106,13 +97,13 @@ h2 {
 h3 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    color: #7dd3fc;
+  
 }
 
 h4 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    color: #ddd;
+    color: #75bfff;
 }
 
 
@@ -133,7 +124,7 @@ h4 {
 .sobremi figcaption {
     margin-top: 0.5rem;
     font-style: italic;
-    color: #9adfff;
+    color: #00aeff;
 }
 
 .sobremi p {
@@ -153,26 +144,42 @@ h4 {
 
 dl dt {
     margin-top: 1rem;
-    color: #d2d4cd;
+    color: #a8dfff;
+    text-decoration: underline;
+
 }
 
 dl dd {
     margin-left: 1rem;
-    color: #ccc;
+    color: #ffffff;
 }
 .skills h3 {
-    font-size: 2.2rem;
-    color: #d2d4cd;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(51, 228, 255);
+    margin-bottom: 0.5rem;
     text-align: center;
 }
+
 .skills h4 {
-    font-size: 1.7rem;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    padding-left: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #57a1fc;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
+.soft h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #57a1fc;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
 
 .Formación ul {
     list-style: none;
@@ -188,22 +195,24 @@ dl dd {
 }
 .Formación h2{
     text-align: center;
+    color: #e7c8ff;
+    font-size: 2.2rem;
 }
 
 .Formación h3 {
-    color: #ffffff;
+    color: #7e6ca4;
 }
 
 
 .proyectos .u-box {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(195, 53, 53, 0.04);
     padding: 2rem;
     border-radius: 15px;
     margin-top: 1.5rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 .proyectos h3 {
-    color: #ffffff;
+    color: #b3faf6;
     font-size: 1.8rem;
 }
 .proyectos img {
@@ -335,20 +344,7 @@ p.linkProf > a {
         background 0.25s ease;
 }
 p.linkProf > a:hover {
-    background: #111111;
+    background: #242323;
     transform: translateY(-3px);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        gap: 1rem;
-    }
-
-    .encabezado h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-}
